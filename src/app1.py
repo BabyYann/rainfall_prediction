@@ -5,30 +5,6 @@ from tensorflow.keras.models import load_model
 import plotly.graph_objs as go
 from scipy.stats import zscore
 from sklearn.preprocessing import MinMaxScaler
-import os
-
-# Fungsi untuk mengatur tema menggunakan config.toml
-def set_theme(theme):
-    config_path = os.path.join(os.path.dirname(__file__), '.streamlit/config.toml')
-    with open(config_path, 'w') as config_file:
-        if theme == "Gelap":
-            config_file.write("""
-            [theme]
-            base="dark"
-            primaryColor="#d33682"
-            backgroundColor="#002b36"
-            secondaryBackgroundColor="#586e75"
-            textColor="#ffffff"
-            """)
-        else:
-            config_file.write("""
-            [theme]
-            base="light"
-            primaryColor="#d33682"
-            backgroundColor="#f0f2f6"
-            secondaryBackgroundColor="#ffffff"
-            textColor="#000000"
-            """)
 
 # Fungsi untuk memuat model
 def load_best_model(model_path):
@@ -78,7 +54,7 @@ def predict_rainfall(model, X_test):
         st.error(f"Gagal melakukan prediksi: {e}")
         return None
 
-# Sidebar untuk panduan pengguna dan pemilihan tema
+# Sidebar untuk panduan pengguna
 with st.sidebar:
     with st.expander("Panduan Pengguna"):
         st.markdown("""
@@ -88,11 +64,6 @@ with st.sidebar:
         3. Aplikasi akan menampilkan hasil prediksi dan grafik perbandingan.
         4. Anda dapat mengunduh hasil prediksi dalam format CSV.
         """)
-
-    theme = st.selectbox("Pilih Tema", ["Terang", "Gelap"])
-
-# Terapkan tema yang dipilih
-set_theme(theme)
 
 st.title("Rainfall Prediction with Deep Learning (LSTM)")
 
@@ -168,11 +139,11 @@ if uploaded_file is not None:
                     xaxis_title='Tanggal',
                     yaxis_title='Rainfall (mm)',
                     xaxis=dict(tickformat='%d-%m-%Y'),
-                    template=theme == "Gelap" and 'plotly_dark' or 'plotly_white'
+                    template='plotly_white'  # Ganti dengan template putih atau sesuaikan dengan preferensi default
                 )
                 st.plotly_chart(fig)
 
                 # Menampilkan pesan sukses
                 st.success("Prediksi selesai dan grafik berhasil ditampilkan!")
 else:
-                st.info("Silakan upload file data mentah untuk memulai prediksi.")
+    st.info("Silakan upload file data mentah untuk memulai prediksi.")
