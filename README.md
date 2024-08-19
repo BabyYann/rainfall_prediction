@@ -9,7 +9,7 @@ Proyek ini bertujuan untuk memprediksi curah hujan menggunakan model LSTM berbas
   - `processed/`: Data yang telah dibersihkan dan dipersiapkan untuk pemodelan.
 
 - `models/`: Berisi model-model akhir yang telah dilatih.
-  - **`model_1.h5`**, **`model_2.h5`**, dan seterusnya: Model yang telah dilatih dan siap digunakan.
+  - **`model_1.keras`**, **`model_2.keras`**, dan seterusnya: Model yang telah dilatih dan siap digunakan.
 
 - `src/`:
   - **`models/`**: Salinan dari model-model akhir yang berada di luar direktori `src/`. Salinan ini digunakan oleh aplikasi Streamlit.
