@@ -1,6 +1,13 @@
 # Proyek Prediksi Curah Hujan
 
-Proyek ini bertujuan untuk memprediksi curah hujan menggunakan model LSTM berbasis Attention dan mengintegrasikannya ke dalam aplikasi Streamlit. Aplikasi ini menyediakan antarmuka pengguna untuk memproses dan memvisualisasikan prediksi curah hujan berdasarkan data historis.
+# Proyek Prediksi Curah Hujan
+
+Proyek ini bertujuan untuk memprediksi curah hujan menggunakan model LSTM berbasis Attention dan mengintegrasikannya ke dalam aplikasi Streamlit. Aplikasi ini menyediakan antarmuka pengguna untuk memproses dan memvisualisasikan prediksi curah hujan berdasarkan data historis. 
+
+Model LSTM berbasis Attention ini dirancang untuk menangkap pola temporal dalam data curah hujan dan meningkatkan akurasi prediksi dengan memfokuskan perhatian pada fitur-fitur penting dalam data historis. Dengan integrasi ke dalam Streamlit, pengguna dapat dengan mudah mengunggah data, melihat hasil prediksi, dan menganalisis informasi visual melalui antarmuka yang interaktif.
+
+Data yang digunakan dalam proyek ini diperoleh dari situs resmi BMKG untuk memastikan keakuratan dan relevansi prediksi. Proyek ini bertujuan untuk memberikan alat yang berguna bagi para peneliti, pengambil keputusan, dan pihak lain yang tertarik dalam analisis curah hujan.
+
 
 ## Struktur Proyek
 
