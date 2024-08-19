@@ -16,6 +16,8 @@ Proyek ini bertujuan untuk memprediksi curah hujan menggunakan model LSTM berbas
   - `app1.py`: Script utama untuk aplikasi Streamlit. Digunakan untuk menjalankan antarmuka pengguna dan memproses input data.
   - `test_data_pasti.csv`: File data uji yang digunakan dalam aplikasi Streamlit untuk menguji model dengan data baru.
 
+- `notebooks/`: Jupyter notebooks untuk eksplorasi data, eksperimen model, dan analisis. 
+
 - `.streamlit/`: Folder yang berisi tema untuk Streamlit, termasuk tema gelap dan terang.
 
 - `requirements.txt`: Daftar paket Python yang diperlukan untuk menjalankan proyek.
