@@ -21,7 +21,8 @@ Data yang digunakan dalam proyek ini diperoleh dari situs resmi BMKG untuk memas
   - `app1.py`: Script utama untuk aplikasi Streamlit. Digunakan untuk menjalankan antarmuka pengguna dan memproses input data.
   - `test_data_pasti.csv`: File data uji yang digunakan dalam aplikasi Streamlit untuk menguji model dengan data baru.
 
-- `notebooks/`: Jupyter notebooks untuk eksplorasi data, eksperimen model, dan analisis. 
+- `notebooks/`: Jupyter notebooks untuk eksplorasi data, eksperimen model, dan analisis. Proses pelatihan dan eksperimen model dilakukan menggunakan Google Colab untuk memanfaatkan sumber daya komputasi yang lebih besar dan kemudahan akses ke alat-alat analisis.
+
 
 - `.streamlit/`: Folder yang berisi tema untuk Streamlit, termasuk tema gelap dan terang.
 
