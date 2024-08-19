@@ -34,5 +34,5 @@ Data yang digunakan dalam proyek ini diperoleh dari situs resmi BMKG untuk memas
 
 1. Clone repository:
    ```bash
-   git clone <URL_REPOSITORY>
+   git clone https://github.com/BabyYann/rainfall_prediction
    cd rainfall_prediction_project
